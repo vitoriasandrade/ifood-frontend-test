@@ -1,11 +1,17 @@
 import Head from "next/head";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  background: #000;
+`;
 
 export default function Home() {
   return (
-    <div className="home">
+    <Container>
       <Head>
-        <title>Bom dia</title>
+        <title>Home</title>
       </Head>
-    </div>
+    </Container>
   );
 }
