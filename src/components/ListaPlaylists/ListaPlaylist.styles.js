@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ListaContainer = styled.div`
+  display: flex;
   width: 100%;
-  background: #fff;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
