@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import getFiltros from "../../api/filtroService";
 import { FiltroContainer, FiltroItem } from "./Filtro.styles";
 import { Select } from "./Select/Select";
+import { Input } from "./Input/Input";
 
 export function Filtro() {
   const [filtros, setFiltros] = useState([]);
@@ -31,7 +32,7 @@ export function Filtro() {
 
         return (
           <FiltroItem key={filtro.id}>
-            <p>{filtro.name}</p>
+            <Input id={filtro.id} />
           </FiltroItem>
         );
       })}

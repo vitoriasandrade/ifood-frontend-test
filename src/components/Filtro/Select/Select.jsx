@@ -1,10 +1,8 @@
-export function Select({ name, values }) {
+export function Select(props) {
   return (
     <select>
-      <option value="">{name}</option>
-
-      {values.map((value) => {
-        return <option value={value.value}>{value.name}</option>;
+      {props.values.map((value) => {
+        return <option value={value.value}> {value.name} </option>;
       })}
     </select>
   );
